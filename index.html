@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thaynara Anacleto | Desenvolvedora</title>
+
+    <meta name="description" content="Portfólio de Thaynara Anacleto, estudante de Ciência da Computação e desenvolvedora focada em HTML, CSS, JavaScript, Java e SQL.">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="tsparticles"></div>
+
+    <header>
+        <div class="container">
+            <img src="assets/my-ph.jpg" class="profile-img" alt="Foto de Thaynara">
+
+            <h1><span id="typewriter"></span></h1>
+            <p>Estudante de Ciência da Computação & Desenvolvedora</p>
+            <button id="btnContato">Fale comigo</button>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="reveal">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+
+            <div class="sobre-grid">
+
+                <div class="sobre-card">
+                    <h3>🎓 Formação</h3>
+                    <p>
+                        Estudante de Ciência da Computação e Instrutora de Informática,
+                        com base sólida em lógica, algoritmos e desenvolvimento web.
+                    </p>
+                </div>
+
+                <div class="sobre-card">
+                    <h3>💻 Desenvolvimento</h3>
+                    <p>
+                        Foco em HTML, CSS e JavaScript para criação de interfaces modernas,
+                        além de evolução constante em Java e SQL para construir soluções completas.
+                    </p>
+                </div>
+
+                <div class="sobre-card">
+                    <h3>🧠 Soft Skills</h3>
+                    <p>
+                        Comunicação clara, didática por atuar em sala de aula,
+                        organização, pensamento analítico e aprendizado rápido.
+                    </p>
+                </div>
+
+                <div class="sobre-card">
+                    <h3>🚀 Carreira</h3>
+                    <p>
+                        Construindo minha trajetória como desenvolvedora,
+                        buscando crescimento técnico contínuo e experiência prática.
+                        Meu objetivo é atuar com desenvolvimento de software
+                        e criar soluções eficientes que gerem impacto real.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias" class="reveal">
+        <div class="container">
+            <h2>Tecnologias</h2>
+
+            <h3 class="categoria">Front-end</h3>
+            <div class="tech-grid">
+
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <p>HTML5</p>
+                    <div class="nivel"><span style="width: 90%"></span></div>
+                </div>
+
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <p>CSS3</p>
+                    <div class="nivel"><span style="width: 85%"></span></div>
+                </div>
+
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <p>JavaScript</p>
+                    <div class="nivel"><span style="width: 75%"></span></div>
+                </div>
+
+            </div>
+
+            <h3 class="categoria">Back-end</h3>
+            <div class="tech-grid">
+
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    <p>Java</p>
+                    <div class="nivel"><span style="width: 70%"></span></div>
+                </div>
+
+                <div class="tech-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                    <p>SQL</p>
+                    <div class="nivel"><span style="width: 65%"></span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Thaynara Anacleto | Desenvolvedora</p>
+    </footer>
+
+    <!-- Biblioteca primeiro -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <!-- Seu script -->
+    <script src="script.js" defer></script>
+
+    <!-- Configuração das partículas -->
+    <script>
+        tsParticles.load("tsparticles", {
+            particles: {
+                number: { value: 90 },
+                color: { value: "#b026ff" },
+                size: { value: 3, random: true },
+                opacity: { value: 0.5 },
+                move: { enable: false },
+                links: {
+                    enable: true,
+                    color: "#6a00ff",
+                    distance: 160,
+                    opacity: 0.3
+                }
+            },
+            interactivity: {
+                events: { onHover: { enable: false } }
+            },
+            detectRetina: true
+        });
+    </script>
+
+</body>
+</html>
